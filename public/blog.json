@@ -1,7 +1,7 @@
 [
     {
       "id": 1,
-      "cover": "https://images.unsplash.com/photo-1496360118223-0eec7f6f2200",
+      "cover": "https://i.ibb.co.com/4TQDs72/keyboard-tea.jpg",
       "title": "The Dawn of AI Revolution",
       "posted_date": "2024-10-10",
       "author": "John Doe",
@@ -21,7 +21,7 @@
     },
     {
       "id": 3,
-      "cover": "https://images.unsplash.com/photo-1483794344563-d27a8d38b778",
+      "cover": "https://i.ibb.co.com/vVTwq0n/clark.jpg",
       "title": "The Art of Minimalist Living",
       "posted_date": "2024-09-15",
       "author": "Emily Green",
@@ -31,7 +31,7 @@
     },
     {
       "id": 4,
-      "cover": "https://images.unsplash.com/photo-1607957724595-d1a16ca2e19f",
+      "cover": "https://i.ibb.co.com/61MSCbc/patrick.jpg",
       "title": "Breaking Down Quantum Computing",
       "posted_date": "2024-10-01",
       "author": "Michael Brown",
