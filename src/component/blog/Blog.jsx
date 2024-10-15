@@ -1,12 +1,14 @@
 import { space } from 'postcss/lib/list';
 import PropTypes from 'prop-types';
+import { FaRegBookmark } from "react-icons/fa6";
 
-const Blog = ({blog}) => {
+
+const Blog = ({blog,handleAddtoBookmarks}) => {
     const {title,cover, author,reading_time,author_img,posted_date,hashtags} = blog
-    console.log(blog);
+    // console.log(blog);
     return (
-        <div className='space-y-7 mb-10'>
-            <img className='w-[800px] mb-4' src={cover} alt={`Cover picture of ${title}`} />
+        <div className='space-y-7 mb-20'>
+            <img className='w-full mb-4 rounded-lg' src={cover} alt={`Cover picture of ${title}`} />
             <div className='flex justify-between items-center mb-5'>
                 <div className='flex gap-4 items-center'>
                     <img className='w-14 rounded-full' src={author_img} alt="" />
@@ -15,8 +17,11 @@ const Blog = ({blog}) => {
                         <p>{posted_date}</p>
                     </div>
                 </div>
-                <div>
+                <div className='items-center flex gap-4'>
                     <span>{reading_time} min read </span>
+                    <button onClick={() => handleAddtoBookmarks(blog)} className='text-xl text-red-400'>
+                        <FaRegBookmark></FaRegBookmark>
+                        </button>
                 </div>
             </div>
             <h2 className='text-4xl mb-2'>{title}</h2>
@@ -31,6 +36,7 @@ const Blog = ({blog}) => {
 };
 
 Blog.propType = {
-    blog: PropTypes.object.isRequired
+    blog: PropTypes.object.isRequired,
+    handleAddtoBookmarks : PropTypes.func.isRequired
 }
 export default Blog;
